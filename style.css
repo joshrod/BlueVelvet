@@ -483,10 +483,11 @@ button:active {
 }
 
 .success {
-  padding: .5rem;
-  margin-bottom: 0.25rem;
+  padding: .2rem;
+  /*margin-bottom: 0.25rem;*/
   font-family: 'Raleway', sans-serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
   color: #468847;
   background-color: #dff0d8;
   border: 1px solid #d6e9c6;
@@ -496,10 +497,11 @@ button:active {
 }
 
 .error {
-  padding: .5rem;
-  margin-bottom: 0.25rem;
+  padding: .2rem;
+  /*margin-bottom: 0.25rem;*/
   font-family: 'Raleway', sans-serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-align: center;
   color: #b94a48;
   background-color: #f2dede;
   border: 1px solid rgba(185, 74, 72, 0.3);
@@ -718,6 +720,10 @@ button:active {
     font-size: 1.4rem;
   }
 
+  .field {
+    margin: 9% 0;
+  }
+
   #mapwrap {
     height: 85%;
     width: 50%;
@@ -728,11 +734,8 @@ button:active {
 
   #page-wrapper {
     margin: 0;
-    padding: 2%;
+    padding: 5% 2% 2%;
     width: 50%;
-    height: 100%;
-    line-height: 2.5;
-    line-height: 250%;
   }
 
   #followclick {
@@ -829,6 +832,10 @@ button:active {
 #menulink {
   font-size: 1.8rem;
 }
+
+ .field {
+    margin: 5% 0;
+  }
 
   #map {
     /*height: 55%;*/
