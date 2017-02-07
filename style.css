@@ -1,0 +1,858 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  color: white;
+}
+
+h1 {
+  padding-top: 2.5rem;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/*------------------ This styles the navigation bar -----------------*/
+
+#navigation {
+  width: 100%;
+  height: 6rem;
+  opacity: 0.8;
+  background-color: #030303;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#navheader {
+  margin-left: 4%;
+  padding: .4rem;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  font-weight: 300;
+  float: left;  
+}
+
+
+#topnav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#topnav li:not(:last-child) {
+  display: none;
+}
+
+#topnav li a {
+  padding: 2rem;
+  display: inline-block;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.4rem;  
+}
+
+#more {
+  float: right;
+}
+
+#more:hover {
+  background-color: #000066;
+}
+
+.active {
+  background-color: #000066;
+}
+
+#sidebar {
+  height: 100%;
+  width: 30rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  overflow-x: hidden; 
+  background-color: #030303;
+  display: none;
+  text-align: center;
+}
+
+#sidenav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#sidenav li a {
+  width: 30rem;
+  height: 25%;
+  padding: 2rem 3rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 2rem; 
+  color: white;
+  display: block;
+}
+
+#sidenav li a:hover {
+  background-color: #000066;
+}
+
+/*----------- Styling for the picture/words at the beginning of the page ------------*/
+
+#home {
+  height: 100%; /*Added*/
+  background: url('pictures/firstfloor.jpg');
+  background-color: navy;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+/*--------------------- Welcome Page ------------------- */
+
+#welcome {
+  background-color: #000035;
+  text-align: center;
+}
+
+#welcome h1 {
+  margin: 0;
+}
+
+#outside {
+  width: 90%;
+  height: 90%;
+  margin: 10% auto 0;
+  box-shadow: 5px 5px 8px #111;
+}
+
+#welwrap {
+  margin-top: 5%;
+  padding: 4% 6% 0;
+  font-size: 1.4rem;
+}
+
+#wtext1, #wtext2 {
+  line-height: 1.5;
+}
+
+#wtext1 {
+  margin: 0;
+}
+
+#wtext2 {
+  margin-top: 3%;
+}
+
+#tang {
+  color: #ffb26d;
+  text-decoration: none;
+}
+
+#tang:hover {
+  color: #ffd8b6;
+}
+
+#schedule {
+  padding: 6% 2.5rem 10%;
+}
+
+#hourheader {
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+#hours {
+  margin: .8rem 0;
+  line-height: 1.5; /*Added*/
+}
+
+/*----------- Tangerine Lounge styling -------------- */
+
+#tangerine {
+  background-color: #00002c;
+  text-align: center;
+}
+
+#tanheaders {
+  padding-top: 1.2rem;  
+}
+
+#tangerine h1 {
+  margin: 0;
+}
+
+#tangerine h3 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 4%;
+  font-size: 1.4rem;
+  letter-spacing: 1rem; /*Added*/
+}
+
+#tanwrap {
+  margin-top: 10%;
+}
+
+.tantext {
+  margin: 0;
+  padding: 0 5%;
+  line-height: 2;
+}
+
+#latintext {  /*Added*/
+  padding: 0 3%;  
+}
+
+#privatetext {
+  margin: 7% 0;
+}
+
+#reservepvt {
+  color: red;
+  padding: 0 8%;
+}
+
+#thumbs {
+  margin: 5% 0 0;
+}
+
+.tangpics {
+  width: 90%;
+  margin: 5% 0;
+}
+
+/*-------------------- Menu Styling -------------------*/
+
+#menu {
+  background-color: #000023;
+  text-align: center;
+}
+
+#menu h1 {
+  margin: 0;
+}
+
+.cycle-slideshow {
+  width: 100%;
+  margin: 12% 0;
+  /*width: 100%;
+  height: 42%;
+  margin: 3% 0 4%;*/
+}
+
+#drinkwrap {
+  display: none;
+}
+
+.drinks {
+  height: 20rem;
+  margin: 0 .5%;
+  border-radius: 1rem;
+}
+
+.menutext {
+  margin: 0;
+  padding: 0% 12%;
+  /*padding: 0 20%;*/
+  /*font-size: 1.6rem;*/
+  line-height: 2;
+  /*line-height: 3.5rem;*/
+}
+
+#linkwrap {
+  margin-top: 3%;
+  padding-bottom: 6%; /*Added*/
+}
+
+#menulink {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  /*font-size: 1.8rem;*/
+  color: #ffb26d;
+}
+
+#menulink:hover {
+  color: #ffd8b6;
+}
+
+/*---------------------- Contact Page Styling ----------------------*/
+#contact {
+  background-color: #00001a;
+}
+
+/*#contactwrap {
+  height: 15%;
+}*/
+
+#contactwrap h1 {
+  margin: 0;
+}
+
+/*#formwrapper {
+  height: 85%;
+  position: relative;
+  -webkit-column-count: 2;
+    -moz-column-count: 2; 
+  column-count: 2;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+  column-width: 50%;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+  column-gap: 0; 
+} */
+
+
+#mapwrap {
+/*  height: 100%;
+  width: 50%;
+  padding: 2%;
+  float: right;*/
+}
+
+#map {
+  width: 90%;
+  height: 25rem;
+  margin: 7% auto;
+  border-radius: .3rem;
+  /*height: 55%;
+  width: 75%;
+  margin: 1% auto;
+  border-radius: .3rem;*/
+}
+
+#infowrap {
+  /*height: 40%;*/
+  margin: 12% 0; /*Added*/
+  padding: 0 6%;
+  line-height: 1.2; /*Added*/
+  /*padding: 0;*/
+  text-align: center;
+  font-weight: 300;
+}
+
+#infologo {
+  margin: 0;
+  padding: 0 10%; /*Added*/
+  font-size: 2.8rem;
+  /*font-size: 3rem;*/
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+#address {
+  margin-top: 2%;
+  /*margin: 0;*/
+  /*font-size: 1.6rem;*/
+  letter-spacing: .1rem;
+}
+
+#socialwrap {
+  margin-top: 2%;
+}
+
+#followclick {
+  margin: 15% auto 6%; /*Added*/
+  display: block;
+  /*display: inline-block;*/
+}
+
+.sociallink {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.sociallink:hover {
+  opacity: 1.0;
+}
+
+.socialpic {
+  margin: 1% 2.3rem;
+  height: 5rem;
+}
+
+#facebook {
+  width: 2rem;
+}
+
+#page-wrapper {
+  width: 90%;
+  margin: 7% auto;
+ /* margin: 0;
+  padding: 2%;
+  width: 50%;
+  height: 100%;
+  float: left;
+  line-height: 250%;*/
+}
+
+#formtext {
+  margin-bottom: 1%;
+  font-family: 'Raleway', sans-serif;
+  /*font-size: 1.4rem;*/
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: white;
+}
+
+.field {
+  margin: 3% 0;
+}
+
+label {
+  display: block;
+  margin-top: 1%;
+  margin-bottom: .5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  color: #999999;
+}
+
+input {
+  width: 100%;
+  padding: 1% 1%;
+  font-size: 1.2rem;
+  border-radius: .3rem;
+  border: 1px solid #D9D9D9;
+}
+
+textarea {
+  width: 100%;
+  height: 15rem;
+  padding: 1% 1%;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+  resize: none;
+}
+
+button {
+  display: inline-block;
+  border-radius: .3rem;
+  border: none;
+  font-size: 1.4rem;
+  padding: 1% 1%;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  padding: .5rem;
+  margin-bottom: 0.25rem;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: .5rem;
+  margin-bottom: 0.25rem;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+#footer {
+  background-color: black;
+  height: 10%;
+}
+
+#footer h4 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+/*----------------------------MEDIA QUERIES---------------------------------*/
+
+@media only screen and (min-width: 540px) {
+  #outside {
+    margin: 8% auto 0;
+  }
+
+  #tanwrap {
+    margin-top: 10%;
+  }
+
+  .cycle-slideshow {
+    margin-top: 10%;  
+  }
+
+  .drinks {
+    height: 25rem;
+  }
+
+  #infowrap {
+    margin-top: 10%;
+  }
+
+  #followclick {
+    margin: 10% auto 6%;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #navigation {
+    height: 5rem;
+  }
+
+  #navheader {
+    margin-right: 4%;
+    font-size: 1.6rem;
+  }
+  #topnav li {
+    float: left;
+  }
+
+  #topnav li a{
+    padding: 1.8rem;
+  }
+
+  #topnav li:not(:last-child) {
+    display: inline-block;
+  }
+
+  #more {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  #outside {
+    margin: 8% auto 0;
+  }
+
+  #tanwrap {
+    margin-top: 8%;
+  }
+
+  #schedule {
+    padding-bottom: 6%;
+  }
+
+  #hourheader {
+    font-size: 3.4rem;
+  }
+
+  #tangerine h3 {
+    font-size: 2rem;
+  }
+
+  .tantext, .menutext  {
+    line-height: 1.5;
+  }
+
+  #privatetext {
+    margin: 4% 0;
+  }
+
+  #thumbs {
+    margin: 3% 0 0;
+  }
+
+  .cycle-slideshow {
+    margin: 8% 0;  
+  }
+
+  .drinks {
+    height: 30rem;
+  }
+
+  #infowrap {
+    margin-top: 8%;
+  }
+
+  #followclick {
+    margin: 8% auto 6%;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+
+  h1 {
+    padding-top: 5.5rem;
+    letter-spacing: 1.6rem;
+  }
+
+  #navheader {
+    margin-left: 12%;
+  }
+
+  #outside {
+    width: 60%;
+    height: 60%;
+    margin: 5rem auto 0;
+  }
+
+  #welwrap {
+    margin-top: 2%;
+  }
+
+  #hourheader {
+    font-size: 4.5rem;
+  }
+
+  #tanheaders {
+    padding-top: 5.5rem;
+  }
+
+  #tangerine h1 {
+    padding-top: 0;
+  }
+
+  #tangerine h3 {
+    margin-top: .5%;
+    letter-spacing: 1.6rem;
+  }
+
+  #tanwrap {
+    margin-top: 5%;
+  }
+
+  #thumbs {
+    width: 100%;
+    height: 44%;
+    max-height: 44%;
+  }
+
+  .tangpics {
+    max-height: 100%;
+    width: 27%;
+    margin: 0 2%;
+  }
+
+  .cycle-slideshow {
+    display: none;
+  }
+
+  #drinkwrap {
+    width: 100%;
+    height: 42%;
+    margin: 3% 0 4%;
+    display: block;
+  }
+
+  .drinks {
+    width: 18%;
+    max-height: 100%;
+    margin: 0 3%;
+    border-radius: 1rem;
+  }
+
+  #contact {
+    height: 100%;
+    min-height: 700px;
+  }
+
+  #contactwrap {
+    height: 15%;
+  }
+
+  #formwrapper {
+    height: 85%;
+    position: relative;
+  }
+
+  #formtext {
+    font-size: 1.4rem;
+  }
+
+  #mapwrap {
+    height: 85%;
+    width: 50%;
+    padding: 2%;
+    position: absolute;
+    right: 0;
+  } 
+
+  #page-wrapper {
+    margin: 0;
+    padding: 2%;
+    width: 50%;
+    height: 100%;
+    line-height: 2.5;
+    line-height: 250%;
+  }
+
+  #followclick {
+    margin: 4% auto 2%;
+  } 
+
+  #map {
+    height: 20rem;
+    width: 75%;
+    margin: 1% auto;
+    border-radius: .3rem;
+  }
+
+  .socialpic {
+    margin: 2rem 3rem 0;
+    height: 3rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  .section {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+}
+
+  #navheader {
+    margin-left: 25%;
+  }
+
+  #welcome h1 {
+    display: none;
+  }
+
+  /*#outside {
+    height: 52%;
+    margin-top: 2%;
+  }*/
+
+  #welwrap {
+    width: 50%;
+    margin: 0; 
+    padding: 1%;
+    float: left;
+  }
+
+  #schedule {
+  margin: 0;
+  padding: 2% 2.5rem;
+}
+
+#hourheader {
+  margin: 0;
+  font-size: 3.2rem;
+}
+
+#hours {
+  margin: 1rem 0 0;
+}
+
+.tantext {
+  padding: 0 20%;
+}
+
+#privatetext {
+  margin: 2% 0;
+}
+
+#thumbs {
+    height: 37%;
+    max-height: 37%;
+}
+
+#drinkwrap {
+  display: block;
+  width: 100%;
+  height: 42%;
+  margin: 3% 0 4%;
+}
+
+.drinks {
+  width: 16.5%;
+}
+
+.menutext {
+  padding: 0 20%;
+}
+
+#linkwrap {
+  padding-bottom: 0;
+}
+
+#menulink {
+  font-size: 1.8rem;
+}
+
+  #map {
+    /*height: 55%;*/
+    height: 30rem;
+  }
+
+#infowrap {
+  height: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+#infologo {
+  margin: 0;
+  font-size: 3rem;
+}
+
+#address {
+  margin: 2% 0 0;
+  font-size: 1.6rem;
+}
+
+#followclick {
+  margin: 2%;
+  display: inline-block;
+}
+}
