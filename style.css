@@ -192,7 +192,7 @@ h1 {
 
 #hours {
   margin: .8rem 0;
-  line-height: 1.5; /*Added*/
+  line-height: 1.5;
 }
 
 /*----------- Tangerine Lounge styling -------------- */
@@ -265,9 +265,6 @@ h1 {
 .cycle-slideshow {
   width: 100%;
   margin: 12% 0;
-  /*width: 100%;
-  height: 42%;
-  margin: 3% 0 4%;*/
 }
 
 #drinkwrap {
@@ -283,10 +280,7 @@ h1 {
 .menutext {
   margin: 0;
   padding: 0% 12%;
-  /*padding: 0 20%;*/
-  /*font-size: 1.6rem;*/
   line-height: 2;
-  /*line-height: 3.5rem;*/
 }
 
 #linkwrap {
@@ -297,7 +291,6 @@ h1 {
 #menulink {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
-  /*font-size: 1.8rem;*/
   color: #ffb26d;
 }
 
@@ -310,34 +303,8 @@ h1 {
   background-color: #00001a;
 }
 
-/*#contactwrap {
-  height: 15%;
-}*/
-
 #contactwrap h1 {
   margin: 0;
-}
-
-/*#formwrapper {
-  height: 85%;
-  position: relative;
-  -webkit-column-count: 2;
-    -moz-column-count: 2; 
-  column-count: 2;
-    -webkit-column-width: 50%;
-    -moz-column-width: 50%;
-  column-width: 50%;
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-  column-gap: 0; 
-} */
-
-
-#mapwrap {
-/*  height: 100%;
-  width: 50%;
-  padding: 2%;
-  float: right;*/
 }
 
 #map {
@@ -345,18 +312,12 @@ h1 {
   height: 25rem;
   margin: 7% auto;
   border-radius: .3rem;
-  /*height: 55%;
-  width: 75%;
-  margin: 1% auto;
-  border-radius: .3rem;*/
 }
 
 #infowrap {
-  /*height: 40%;*/
   margin: 12% 0; /*Added*/
   padding: 0 6%;
   line-height: 1.2; /*Added*/
-  /*padding: 0;*/
   text-align: center;
   font-weight: 300;
 }
@@ -365,15 +326,12 @@ h1 {
   margin: 0;
   padding: 0 10%; /*Added*/
   font-size: 2.8rem;
-  /*font-size: 3rem;*/
   text-transform: uppercase;
   letter-spacing: .3rem;
 }
 
 #address {
   margin-top: 2%;
-  /*margin: 0;*/
-  /*font-size: 1.6rem;*/
   letter-spacing: .1rem;
 }
 
@@ -384,7 +342,6 @@ h1 {
 #followclick {
   margin: 15% auto 6%; /*Added*/
   display: block;
-  /*display: inline-block;*/
 }
 
 .sociallink {
@@ -408,18 +365,11 @@ h1 {
 #page-wrapper {
   width: 90%;
   margin: 7% auto;
- /* margin: 0;
-  padding: 2%;
-  width: 50%;
-  height: 100%;
-  float: left;
-  line-height: 250%;*/
 }
 
 #formtext {
   margin-bottom: 1%;
   font-family: 'Raleway', sans-serif;
-  /*font-size: 1.4rem;*/
   font-size: 1.2rem;
   letter-spacing: 0;
   text-transform: none;
@@ -484,7 +434,6 @@ button:active {
 
 .success {
   padding: .2rem;
-  /*margin-bottom: 0.25rem;*/
   font-family: 'Raleway', sans-serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -498,7 +447,6 @@ button:active {
 
 .error {
   padding: .2rem;
-  /*margin-bottom: 0.25rem;*/
   font-family: 'Raleway', sans-serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -730,6 +678,7 @@ button:active {
     padding: 2%;
     position: absolute;
     right: 0;
+    z-index: 1;
   } 
 
   #page-wrapper {
@@ -758,10 +707,10 @@ button:active {
 @media only screen and (min-width: 960px) {
 
   .section {
-  width: 100%;
-  height: 100%;
-  min-height: 700px;
-}
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+  }
 
   #navheader {
     margin-left: 25%;
@@ -771,11 +720,6 @@ button:active {
     display: none;
   }
 
-  /*#outside {
-    height: 52%;
-    margin-top: 2%;
-  }*/
-
   #welwrap {
     width: 50%;
     margin: 0; 
@@ -784,82 +728,81 @@ button:active {
   }
 
   #schedule {
-  margin: 0;
-  padding: 2% 2.5rem;
-}
+    margin: 0;
+    padding: 2% 2.5rem;
+  }
 
-#hourheader {
-  margin: 0;
-  font-size: 3.2rem;
-}
+  #hourheader {
+    margin: 0;
+    font-size: 3.2rem;
+  }
 
-#hours {
-  margin: 1rem 0 0;
-}
+  #hours {
+    margin: 1rem 0 0;
+  }
 
-.tantext {
-  padding: 0 20%;
-}
+  .tantext {
+    padding: 0 20%;
+  }
 
-#privatetext {
-  margin: 2% 0;
-}
+  #privatetext {
+    margin: 2% 0;
+  }
 
-#thumbs {
+  #thumbs {
     height: 37%;
     max-height: 37%;
-}
+  }
 
-#drinkwrap {
-  display: block;
-  width: 100%;
-  height: 42%;
-  margin: 3% 0 4%;
-}
+  #drinkwrap {
+    display: block;
+    width: 100%;
+    height: 42%;
+    margin: 3% 0 4%;
+  }
 
-.drinks {
-  width: 16.5%;
-}
+  .drinks {
+    width: 16.5%;
+  }
 
-.menutext {
-  padding: 0 20%;
-}
+  .menutext {
+    padding: 0 20%;
+  }
 
-#linkwrap {
-  padding-bottom: 0;
-}
+  #linkwrap {
+    padding-bottom: 0;
+  }
 
-#menulink {
-  font-size: 1.8rem;
-}
+  #menulink {
+    font-size: 1.8rem;
+  }
 
  .field {
     margin: 5% 0;
   }
 
   #map {
-    /*height: 55%;*/
     height: 30rem;
   }
 
-#infowrap {
-  height: 40%;
-  margin: 0;
-  padding: 0;
-}
+  #infowrap {
+    height: 40%;
+    margin: 0;
+    padding: 0;
+  }
 
-#infologo {
-  margin: 0;
-  font-size: 3rem;
-}
+  #infologo {
+    margin: 0;
+    font-size: 3rem;
+  }
 
-#address {
-  margin: 2% 0 0;
-  font-size: 1.6rem;
-}
+  #address {
+    margin: 2% 0 0;
+    font-size: 1.6rem;
+  }
 
-#followclick {
-  margin: 2%;
-  display: inline-block;
-}
+  #followclick {
+    margin: 2%;
+    display: inline-block;
+  }
 }
